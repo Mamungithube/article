@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     # Third-party apps
     'rest_framework',
     'corsheaders',
-    'drf-spectacular',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -67,7 +67,7 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.BrowsableAPIRenderer',
         
     ),
-    'DEFAULT_SCHEMA_CLASS': 'drf-spectacular.openapi.AutoSchema',
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'EXCEPTION_HANDLER': 'article.utils.custom_exception_handler',
 }
 
