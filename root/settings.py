@@ -65,7 +65,9 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
         'article.utils.GlobalRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
+        
     ),
+    'DEFAULT_SCHEMA_CLASS': 'drf-spectacular.openapi.AutoSchema',
     'EXCEPTION_HANDLER': 'article.utils.custom_exception_handler',
 }
 
